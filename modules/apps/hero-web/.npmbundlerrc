@@ -1,11 +1,25 @@
 {
-	"create-jar": {
-		"output-dir": "dist",
-		"features": {
-			"js-extender": true,
-			"web-context": "/hero-web",
-			"localization": "features/localization/Language"
-		}
-	},
-	"dump-report": true
+    "create-jar": {
+        "output-dir": "dist",
+        "features": {
+            "js-extender": true,
+            "web-context": "/hero-web",
+            "localization": "features/localization/Language"
+        }
+    },
+    "dump-report": true,
+    "exclude": {
+        "*": true
+    },
+    "config": {
+        "imports": {
+            "npm-react-provider": {
+                "react": "16.8.6",
+                "react-dom": "16.8.6"
+            }
+        },
+        "": {
+            "npm-react-provider": "^1.0.0"
+        }
+    }
 }

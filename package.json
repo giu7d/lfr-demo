@@ -4,7 +4,8 @@
         "packages": [
             "themes/demo-theme",
             "modules/apps/hero-web",
-            "modules/apps/banner-web"
+            "modules/apps/banner-web",
+            "modules/npm-react-provider"
         ]
     }
 }

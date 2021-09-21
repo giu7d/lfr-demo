@@ -1,7 +1,5 @@
 {
-    "translatorTextKey": "",
-    "supportedLocales": [],
-    "liferayDir": "../../../bundles",
+    "liferayDir": "../../bundles",
     "webpack": {
         "rules": [
             {
