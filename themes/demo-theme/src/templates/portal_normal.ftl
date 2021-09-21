@@ -26,62 +26,6 @@
 		<title>${the_title} | ${company_name}</title>
 		<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 		<@liferay_util["include"] page=top_head_include />
-
-	    <script type="text/javascript">
-            Liferay.provide(
-                window,
-                'openModal',
-                function(title, url) {
-                    var A = AUI();
-                    var width = 800;
-
-                    var modal = Liferay.Util.Window.getWindow({
-                        dialog: {
-                            centered: true,
-                            constrain2view: true,
-                            modal: true,
-                            resizable: false,
-                            height: 650,
-                            width: width,
-                            //destroyOnClose: true,
-                            destroyOnHide: true,
-                            toolbars: {
-                                footer: [
-                                    {
-                                        label: 'Close',
-                                        cssClass: 'btn-link pull-right',
-                                        on: {
-                                            click: function() {
-                                                modal.hide();
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        closeOnOutsideClick: true,
-                        id:'test-dialog',
-                        title: title
-                    }).plug(A.Plugin.DialogIframe, {
-                        uri: url,
-                        on: {
-                            success: function(event) {
-                                console.log("success");
-                            },
-                            complete: function(event) {
-                                console.log("complete");
-                            },
-                            start: function(event) {
-                                console.log("start");
-                            },
-                            failure: function(event) {
-                                console.log("failure");
-                            }
-                        }
-                    }).render();
-                }
-            );
-        </script>
 	</head>
 
 	<body class="${css_class}">

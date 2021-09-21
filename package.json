@@ -2,7 +2,9 @@
     "private": true,
     "workspaces": {
         "packages": [
-            "themes/demo-theme"
+            "themes/demo-theme",
+            "modules/apps/hero-web",
+            "modules/apps/banner-web"
         ]
     }
 }
