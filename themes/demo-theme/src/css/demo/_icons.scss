@@ -1,0 +1,24 @@
+$demo-icon-size: 1.5rem;
+
+.demo-icon {
+  content: ' ';
+  display: flex;
+  height: $demo-icon-size;
+  min-width: $demo-icon-size;
+  //top: calc(-1 * 1.5rem / 2);
+}
+
+@mixin demo-icon($name) {
+  .#{$name} {
+    display: block;
+
+    &:before {
+      @extend .demo-icon;
+      background: url('../images/icons/#{$name}.svg') no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+}
+
+@include demo-icon('menu');

@@ -1,0 +1,74 @@
+$nav-height-mobile: 3rem;
+$nav-height: 2.75rem;
+$nav-logo-height: 1.25rem;
+
+#navigation {
+  align-items: center;
+  background-color: $neutral-1;
+  display: flex;
+  height: $nav-height-mobile;
+  justify-content: center;
+  width: 100%;
+
+  .nav {
+    align-items: center;
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+
+    .nav-collapsed {
+      display: block;
+    }
+
+    .nav-expanded {
+      display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      justify-content: center;
+      max-width: 1000px;
+
+      .nav-collapsed {
+        display: none;
+      }
+
+      .nav-expanded {
+        display: block;
+      }
+    }
+  }
+
+  .nav-logo {
+    background-image: url('../images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: $nav-logo-height;
+    transition: all .3s linear;
+    width: $nav-logo-height;
+  }
+
+  .nav-link {
+    color: $neutral-5 !important;
+    font-weight: normal;
+    font-size: 0.875rem;
+    text-decoration: none;
+    text-underline: none;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: $neutral-7 !important;
+    }
+
+    svg {
+      display: none !important;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    height: $nav-height;
+  }
+}
+

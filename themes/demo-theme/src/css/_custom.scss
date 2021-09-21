@@ -1,0 +1,36 @@
+.hide-accessible {
+  display: none;
+}
+
+body {
+  background-color: $neutral-7;
+}
+
+#wrapper {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  //margin-top: $header-height;
+  position: relative;
+  width: 100%;
+}
+
+#main-content {
+  flex: 1;
+  padding: 2rem 2.5rem 2.5rem;
+  position: relative;
+}
+
+#banner.page-editor__disabled-area.collapsed {
+  padding-right: 0;
+}
+
+@media (max-width: 575px) {
+  #main-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

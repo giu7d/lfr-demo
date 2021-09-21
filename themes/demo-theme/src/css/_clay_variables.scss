@@ -1,0 +1,37 @@
+// Font
+$font-family-sans-serif: 'Open Sans', system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-weight-bold: 600 !default;
+
+// Colors
+$primary: #007aff !default;
+$primary-d1: #0a84ff !default;
+$primary-d2: darken($primary, 10) !default;
+$primary-l1: lighten($primary, 22.94) !default;
+$primary-l2: lighten($primary, 32.94) !default;
+$primary-l3: lighten($primary, 44.90) !default;
+
+$secondary: #5856d6 !default;
+$secondary-d1: darken($secondary, 7.5) !default;
+$secondary-d2: darken($secondary, 10) !default;
+$secondary-l1: lighten($secondary, 22.94) !default;
+$secondary-l2: lighten($secondary, 32.94) !default;
+$secondary-l3: lighten($secondary, 44.90) !default;
+
+$dark: #080F1B !default;
+
+$danger: #ff3b30 !default;
+$info: #30b0c7 !default;
+$success: #34c759 !default;
+$warning: #ff9500 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+        primary-d1: $primary-d1,
+), $theme-colors);
+
+$btn-font-size: 0.875rem;
+$btn-font-weight: 700;
+
+$custom-control-indicator-active-bg: $primary;
+$custom-control-indicator-checked-bg: $primary;
+$custom-control-indicator-checked-border-color: $primary;
