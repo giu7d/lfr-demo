@@ -2,8 +2,7 @@
     "private": true,
     "workspaces": {
         "packages": [
-            "themes/demo-theme",
-            "modules/my-project"
+            "themes/demo-theme"
         ]
     }
 }
