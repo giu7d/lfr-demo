@@ -3,7 +3,7 @@
 <#include init />
 
 <#assign
-    is_company_admin = false
+	is_company_admin = false
 />
 
 <#if permissionChecker.isCompanyAdmin()>

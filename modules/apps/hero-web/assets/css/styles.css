@@ -1,5 +1,6 @@
 .tag {
-	font-weight: bold; margin-right: 1em;
+	font-weight: bold;
+	margin-right: 1em;
 }
 
 .value {
@@ -7,6 +8,6 @@
 }
 
 .pre {
-	font-family: monospace; white-space: pre;
+	font-family: monospace;
+	white-space: pre;
 }
-

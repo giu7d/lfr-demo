@@ -1,3 +1,3 @@
 module.exports = {
-    extends: [require.resolve('../../../.eslintrc.js')],
+	extends: [require.resolve('../../../.eslintrc.js')]
 };
