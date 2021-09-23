@@ -1,5 +1,12 @@
 module.exports = {
 	root: true,
+	env: {
+		browser: true,
+		node: true
+	},
+	globals: {
+		Liferay: true
+	},
 	extends: ['prettier', '@liferay/eslint-config/react'],
 	plugins: ['prettier'],
 	rules: {
