@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /**
  * This is the main entry point of the portlet.
  *
@@ -8,8 +7,4 @@
  * @param  {Object} params a hash with values of interest to the portlet
  * @return {void}
  */
-export default function main({
-	contextPath,
-	portletElementId,
-	portletNamespace
-}) {}
+export default function main() {}
